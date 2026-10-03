@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Peyda';
+  src: url('/fonts/Peyda-Regular.woff2') format('woff2'),
+       url('/fonts/Peyda-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Peyda';
+  src: url('/fonts/Peyda-Medium.woff2') format('woff2'),
+       url('/fonts/Peyda-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Peyda';
+  src: url('/fonts/Peyda-Bold.woff2') format('woff2'),
+       url('/fonts/Peyda-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Peyda';
+  src: url('/fonts/Peyda-Black.woff2') format('woff2'),
+       url('/fonts/Peyda-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)];
+  }
+  .glass-glow {
+    @apply glass shadow-[0_0_15px_rgba(176,38,255,0.3)] hover:shadow-[0_0_25px_rgba(0,240,255,0.5)] transition-shadow duration-300;
+  }
+  .text-glow-blue {
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.7);
+  }
+  .text-glow-purple {
+    text-shadow: 0 0 10px rgba(176, 38, 255, 0.7);
+  }
+}
+
+body {
+  background: linear-gradient(135deg, #0B0014 0%, #1A0033 100%);
+  color: #ffffff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0014;
+}
+::-webkit-scrollbar-thumb {
+  background: #b026ff;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00f0ff;
+}
