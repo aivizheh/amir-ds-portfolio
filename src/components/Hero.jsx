@@ -3,6 +3,7 @@ import { LanguageContext } from '../context/LanguageContext';
 import { Typewriter } from 'react-simple-typewriter';
 import { motion } from 'framer-motion';
 import Tilt from 'react-parallax-tilt';
+import profilePhoto from '../assets/photo.jpg';
 
 const Hero = () => {
   const { t, lang } = useContext(LanguageContext);
@@ -51,7 +52,7 @@ const Hero = () => {
           >
             <div className="w-full h-full rounded-full overflow-hidden border-4 border-cyber-purple/50">
               <img 
-                src="/photo.jpg" 
+                src={profilePhoto} 
                 alt={t.hero.name} 
                 className="w-full h-full object-cover"
               />
