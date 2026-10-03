@@ -1,7 +1,7 @@
 export const dictionary = {
   en: {
     hero: {
-      name: "Amir",
+      name: "Amirhosein Avizheh",
       titles: ["Data Scientist", "AI Engineer", "Freelancer", "Founder of Aivizheh.ir"],
       greeting: "Hello, I'm"
     },
@@ -47,7 +47,7 @@ export const dictionary = {
   },
   fa: {
     hero: {
-      name: "امیر",
+      name: "امیرحسین آویژه",
       titles: ["دانشمند داده", "مهندس هوش مصنوعی", "فریلنسر", "بنیان‌گذار Aivizheh.ir"],
       greeting: "سلام، من هستم"
     },

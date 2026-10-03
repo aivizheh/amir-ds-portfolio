@@ -71,7 +71,7 @@ const Contact = () => {
       </div>
       
       <div className="mt-20 text-center text-white/40 text-sm pb-8">
-        &copy; {new Date().getFullYear()} Amir (Aivizheh). All rights reserved.
+        &copy; {new Date().getFullYear()} Amirhosein Avizheh. All rights reserved.
       </div>
     </section>
   );
